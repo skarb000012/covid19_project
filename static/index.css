@@ -1,0 +1,115 @@
+*{
+    font-family: 'Hi Melody', cursive;
+}
+
+section{
+    width : 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bar{
+    height: 50px;
+    width : 5px;
+    background-color: #BBBBBB;
+    border : 5px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition : 2s;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: #ddd;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Table
+  --------------------------------------------------------------*/
+  table {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+      0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+  }
+  
+  th {
+    color: #ffffff;
+    background: #39a2fb;
+    font-weight: 700;
+  }
+  
+  tr {
+    background: #fff;
+  }
+  
+  tr:hover {
+    background: #f4f4f4;
+  }
+  
+  td {
+    word-wrap: break-word;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /*--------------------------------------------------------------
+    # Small and medium screens
+    --------------------------------------------------------------*/
+  @media all and (max-width: 900px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    table {
+      box-shadow: none;
+    }
+  
+    tr {
+      margin: 0 0 1rem 0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+      border-top: 5px solid #39a2fb;
+      border-radius: 7px;
+      padding-right: 5px;
+    }
+  
+    tr:hover {
+      background: #fff;
+    }
+  
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: right;
+    }
+  
+    td:before {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-title);
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
